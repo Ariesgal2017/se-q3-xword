@@ -24,10 +24,5 @@ There would be six words that fit.  In order to create this program, you will ne
  - File and console (keyboard) I/O
  - Looping, indexing, regex
 
-## Workflow for this Assignment
-1. Fork this repository into your own personal github account.
-2. Then Clone your own repo to your local development machine.
-3. Create a separate branch named dev/your-github-username, and checkout the branch.
-4. Commit your changes, then git push the branch back to your own github account.
-5. From your own Github repo, create a pull request (PR) from your dev branch back to your own master.
-6. Copy/Paste the URL link to your PR as your assignment submission.
+## Submitting your work
+To submit your solution for grading, you will need to create a github [Pull Request (PR)](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests).  Refer to the `PR Workflow` article in your course content for details.
