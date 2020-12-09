@@ -11,7 +11,7 @@ def main():
     with open('dictionary.txt') as f:
         words = f.read().split()
 
-    test_word = raw_input(
+    test_word = input(
         'Please enter a word to solve.\nUse spaces to signify unknown letters: ').lower()
 
     # YOUR ADDITIONAL CODE HERE
