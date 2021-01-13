@@ -8,25 +8,28 @@ import re
 
 # YOUR HELPER FUNCTION GOES HERE
 
-def find_word(word_input, word_list):
+
+def crossword_solver(word_input, list):
     changed_word = word_input.replace(' ', '.')
-    regexed_word = re.compile(changed_word)
-    for word in word_list:
+    crossword_words = re.compile(changed_word)
+    for word in list:
         if len(word_input) == len(word):
-            if re.match(regexed_word, word):
+            if re.match(crossword_words, word):
                 print(word)
 
+
 def main():
-    words = []
+    crosswords = []
     with open('dictionary.txt') as f:
-        words = f.read().split()
+        crosswords = f.read().split()
 
-    test_word = input(
-        'Please enter a word to solve.\nUse spaces to signify unknown letters: ').lower()
+    word_to_test = input(
+        'Please enter a word to solve.\nUse spaces'
+        'to signify unknown letters: ').lower()
+# random comment
+# # raise NotImplementedError('Please complete this')
+    crossword_solver(word_to_test, crosswords)
 
-    
-    # raise NotImplementedError('Please complete this')
-    find_word(test_word, words)
 
 if __name__ == '__main__':
     main()
